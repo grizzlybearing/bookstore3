@@ -1,0 +1,23 @@
+*{
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #476534;
+}
+label, input{
+    font-size: 20px;
+}
+body{
+    background: #0D1F22;
+}
+.wrapper{
+    margin: auto;
+    border-radius: 20px;
+    min-width: 450px;
+    min-height: 300px;
+    background-color: #F7EBEC;
+    padding: 40px 50px 40px 50px;
+    display: table;
+    margin-top: 30px;
+}
+ul li{
+    color: #2c412c;
+}

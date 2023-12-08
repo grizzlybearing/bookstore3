@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 16px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #0D1F22;
+}
+
+header {
+    background-color: #F7EBEC;
+    margin-bottom: 50px;
+}
+
+.lang {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: end;
+}
+
+.lang input {
+    border: none;
+    outline: none;
+    height: 30px;
+    padding: 5px;
+    background-color: #f6b319;
+}
+
+.ru-lang {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-right: 1px solid black;
+    margin-right: 2px;
+}
+
+.en-lang {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-left: 1px solid black;
+}
+
+.lang input.active {
+    border: 3px solid green;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.lang input:hover {
+    background-color: #fac444;
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.brand a {
+    color: #557c3e;
+    font-size: 28px;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.logform {
+    width: auto;
+    height: auto;
+}
+
+.loginbtn {
+    color: #f6b319 !important;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #61122f;
+    margin-left: 5px;
+    border: none;
+}
+
+.loginbtn:hover {
+    background-color: #4b061f;
+}
+
+#tel {
+    font-weight: bold;
+    background-color: #61122f;
+    border-radius: 15px;
+    padding: 10px;
+    color: #f6b319;
+}
+
+#tel:hover {
+    background-color: #4b061f;
+}
+
+.telephone {
+    display: none;
+    font-weight: bold;
+    background-color: #61122f;
+    border-radius: 15px;
+    padding: 10px;
+    color: #f6b319;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation-list a {
+    margin-left: 20px;
+    transition: 0.3s;
+    color: maroon;
+}
+
+.navigation-list a:hover {
+    text-shadow: rgb(112, 11, 11) 1px 1px 2px;
+    color: #61122f;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+}
+
+.main-screen-img {
+    background-image: url("/resource/img/jumbotron_1200.jpg");
+    height: 90vh;
+    margin: 20px 0;
+    background-size: cover;
+    box-shadow: 0px 0px 15px 4px #b60303ab;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-a {
+    transition: 0.3s;
+}
+
+.menu-a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 7px 4px rgb(107, 107, 107);
+}
+
+.menu-item-category {
+    position: absolute;
+    background-color: #434343a7;
+    color: white;
+    width: 100%;
+    line-height: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px 5px 0 0;
+    bottom: 0;
+    right: 0;
+}
+
+.main-menu {
+    margin: 50px 0;
+}
+
+#special {
+    background-image: url("/resource/img/jumbotron_1200.jpg");
+    background-size: cover;
+}
+
+
+.menu-categories {
+    margin: 50px 0;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-categories-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.menu-item {
+    width: 25%;
+}
+
+.menu-category-btn {
+    border: 0px;
+}
+
+.menu-category-img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+    margin: 0 auto;
+}
+
+#breakfast {
+    background-image: url("/resource/img/завтрак.jpeg");
+    background-position: center;
+}
+
+#soup {
+    background-image: url("/resource/img/супы.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#street-food {
+    background-image: url("/resource/img/стритфуд.jpeg");
+}
+
+#deserts {
+    background-image: url("/resource/img/десерты.jpeg");
+}
+
+.menu-category-img:hover {
+    box-shadow: 0px 0px 5px 2px #ffffffdc;
+}
+
+.menu-category-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #1b1b1be4;
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5em;
+    border-radius: 5px 5px 0 0;
+}
+
+@media (max-width: 992px) {
+    .menu-item {
+        width: 30%;
+        /* text-align: center; */
+    }
+
+    .main-screen-img {
+        /*background-image: url("../img/jumbotron_992.jpg");*/
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        width: 40%;
+    }
+
+    #tel {
+        display: none;
+    }
+
+    .telephone {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    header {
+        margin-bottom: 10px;
+    }
+
+    .main-screen-img {
+        /*background-image: url("../img/jumbotron_768.jpg");*/
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-item {
+        width: 350px;
+        height: 250px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .menu-items {
+        display: block;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation-list {
+        display: block;
+    }
+
+    .navigation-list-item {
+        margin-bottom: 5px;
+    }
+
+    .telephone {
+        margin-bottom: 30px;
+    }
+}
